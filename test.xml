@@ -1,0 +1,606 @@
+<?xml version="1.0"?>
+<program srow="0" scol="0" erow="65" ecol="1">
+  <package_declaration srow="0" scol="0" erow="0" ecol="38">
+    package
+    <scoped_identifier srow="0" scol="8" erow="0" ecol="37">
+      <scoped_identifier field="scope" srow="0" scol="8" erow="0" ecol="19">
+        <identifier field="scope" srow="0" scol="8" erow="0" ecol="11">com</identifier>
+        .
+        <identifier field="name" srow="0" scol="12" erow="0" ecol="19">example</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="0" scol="20" erow="0" ecol="37">messagingrabbitmq</identifier>
+    </scoped_identifier>
+    ;
+  </package_declaration>
+  <import_declaration srow="2" scol="0" erow="2" ecol="61">
+    import
+    <scoped_identifier srow="2" scol="7" erow="2" ecol="60">
+      <scoped_identifier field="scope" srow="2" scol="7" erow="2" ecol="37">
+        <scoped_identifier field="scope" srow="2" scol="7" erow="2" ecol="28">
+          <scoped_identifier field="scope" srow="2" scol="7" erow="2" ecol="20">
+            <identifier field="scope" srow="2" scol="7" erow="2" ecol="10">com</identifier>
+            .
+            <identifier field="name" srow="2" scol="11" erow="2" ecol="20">fasterxml</identifier>
+          </scoped_identifier>
+          .
+          <identifier field="name" srow="2" scol="21" erow="2" ecol="28">jackson</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="2" scol="29" erow="2" ecol="37">databind</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="2" scol="38" erow="2" ecol="60">DeserializationFeature</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="3" scol="0" erow="3" ecol="33">
+    import
+    <scoped_identifier srow="3" scol="7" erow="3" ecol="32">
+      <scoped_identifier field="scope" srow="3" scol="7" erow="3" ecol="26">
+        <scoped_identifier field="scope" srow="3" scol="7" erow="3" ecol="20">
+          <identifier field="scope" srow="3" scol="7" erow="3" ecol="13">lombok</identifier>
+          .
+          <identifier field="name" srow="3" scol="14" erow="3" ecol="20">extern</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="3" scol="21" erow="3" ecol="26">slf4j</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="3" scol="27" erow="3" ecol="32">Slf4j</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="5" scol="0" erow="5" ecol="66">
+    import
+    <scoped_identifier srow="5" scol="7" erow="5" ecol="65">
+      <scoped_identifier field="scope" srow="5" scol="7" erow="5" ecol="31">
+        <scoped_identifier field="scope" srow="5" scol="7" erow="5" ecol="26">
+          <identifier field="scope" srow="5" scol="7" erow="5" ecol="10">org</identifier>
+          .
+          <identifier field="name" srow="5" scol="11" erow="5" ecol="26">springframework</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="5" scol="27" erow="5" ecol="31">amqp</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="5" scol="32" erow="5" ecol="65">AmqpRejectAndDontRequeueException</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="6" scol="0" erow="6" ecol="65">
+    import
+    <scoped_identifier srow="6" scol="7" erow="6" ecol="64">
+      <scoped_identifier field="scope" srow="6" scol="7" erow="6" ecol="49">
+        <scoped_identifier field="scope" srow="6" scol="7" erow="6" ecol="38">
+          <scoped_identifier field="scope" srow="6" scol="7" erow="6" ecol="31">
+            <scoped_identifier field="scope" srow="6" scol="7" erow="6" ecol="26">
+              <identifier field="scope" srow="6" scol="7" erow="6" ecol="10">org</identifier>
+              .
+              <identifier field="name" srow="6" scol="11" erow="6" ecol="26">springframework</identifier>
+            </scoped_identifier>
+            .
+            <identifier field="name" srow="6" scol="27" erow="6" ecol="31">amqp</identifier>
+          </scoped_identifier>
+          .
+          <identifier field="name" srow="6" scol="32" erow="6" ecol="38">rabbit</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="6" scol="39" erow="6" ecol="49">annotation</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="6" scol="50" erow="6" ecol="64">RabbitListener</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="7" scol="0" erow="7" ecol="48">
+    import
+    <scoped_identifier srow="7" scol="7" erow="7" ecol="47">
+      <scoped_identifier field="scope" srow="7" scol="7" erow="7" ecol="37">
+        <scoped_identifier field="scope" srow="7" scol="7" erow="7" ecol="26">
+          <identifier field="scope" srow="7" scol="7" erow="7" ecol="10">org</identifier>
+          .
+          <identifier field="name" srow="7" scol="11" erow="7" ecol="26">springframework</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="7" scol="27" erow="7" ecol="37">stereotype</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="7" scol="38" erow="7" ecol="47">Component</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <class_declaration srow="9" scol="0" erow="65" ecol="1">
+    <modifiers srow="9" scol="0" erow="11" ecol="6">
+      <marker_annotation srow="9" scol="0" erow="9" ecol="10">
+        @
+        <identifier field="name" srow="9" scol="1" erow="9" ecol="10">Component</identifier>
+      </marker_annotation>
+      <marker_annotation srow="10" scol="0" erow="10" ecol="6">
+        @
+        <identifier field="name" srow="10" scol="1" erow="10" ecol="6">Slf4j</identifier>
+      </marker_annotation>
+      public
+    </modifiers>
+    class
+    <identifier field="name" srow="11" scol="13" erow="11" ecol="44">MassRolloutRabbitQueueListener2</identifier>
+    <class_body field="body" srow="11" scol="45" erow="65" ecol="1">
+      {
+      <block_comment srow="13" scol="4" erow="17" ecol="7">/**
+     * Kafka Listener to consume all the VIN list from MassRollout Kafka Topic
+     *
+     * @param message
+     */</block_comment>
+      <field_declaration srow="18" scol="4" erow="18" ecol="70">
+        <modifiers srow="18" scol="4" erow="18" ecol="11">
+          private
+        </modifiers>
+        <type_identifier field="type" srow="18" scol="12" erow="18" ecol="42">MassRolloutMessageEventHandler</type_identifier>
+        <variable_declarator field="declarator" srow="18" scol="43" erow="18" ecol="69">
+          <identifier field="name" srow="18" scol="43" erow="18" ecol="69">massRolloutVinEventHandler</identifier>
+        </variable_declarator>
+        ;
+      </field_declaration>
+      <field_declaration srow="19" scol="4" erow="19" ecol="38">
+        <modifiers srow="19" scol="4" erow="19" ecol="11">
+          private
+        </modifiers>
+        <type_identifier field="type" srow="19" scol="12" erow="19" ecol="24">ObjectMapper</type_identifier>
+        <variable_declarator field="declarator" srow="19" scol="25" erow="19" ecol="37">
+          <identifier field="name" srow="19" scol="25" erow="19" ecol="37">objectMapper</identifier>
+        </variable_declarator>
+        ;
+      </field_declaration>
+      <constructor_declaration srow="21" scol="4" erow="26" ecol="5">
+        <modifiers srow="21" scol="4" erow="21" ecol="10">
+          public
+        </modifiers>
+        <identifier field="name" srow="21" scol="11" erow="21" ecol="42">MassRolloutRabbitQueueListener2</identifier>
+        <formal_parameters field="parameters" srow="21" scol="42" erow="22" ecol="104">
+          (
+          <formal_parameter srow="21" scol="43" erow="21" ecol="68">
+            <type_identifier field="type" srow="21" scol="43" erow="21" ecol="55">ObjectMapper</type_identifier>
+            <identifier field="name" srow="21" scol="56" erow="21" ecol="68">objectMapper</identifier>
+          </formal_parameter>
+          ,
+          <formal_parameter srow="22" scol="41" erow="22" ecol="103">
+            <type_identifier field="type" srow="22" scol="41" erow="22" ecol="71">MassRolloutMessageEventHandler</type_identifier>
+            <identifier field="name" srow="22" scol="72" erow="22" ecol="103">massRolloutKafkaVinEventHandler</identifier>
+          </formal_parameter>
+          )
+        </formal_parameters>
+        <constructor_body field="body" srow="22" scol="105" erow="26" ecol="5">
+          {
+          <expression_statement srow="23" scol="8" erow="23" ecol="41">
+            <assignment_expression srow="23" scol="8" erow="23" ecol="40">
+              <field_access field="left" srow="23" scol="8" erow="23" ecol="25">
+                <this field="object" srow="23" scol="8" erow="23" ecol="12">this</this>
+                .
+                <identifier field="field" srow="23" scol="13" erow="23" ecol="25">objectMapper</identifier>
+              </field_access>
+              =
+              <identifier field="right" srow="23" scol="28" erow="23" ecol="40">objectMapper</identifier>
+            </assignment_expression>
+            ;
+          </expression_statement>
+          <expression_statement srow="24" scol="8" erow="24" ecol="74">
+            <assignment_expression srow="24" scol="8" erow="24" ecol="73">
+              <field_access field="left" srow="24" scol="8" erow="24" ecol="39">
+                <this field="object" srow="24" scol="8" erow="24" ecol="12">this</this>
+                .
+                <identifier field="field" srow="24" scol="13" erow="24" ecol="39">massRolloutVinEventHandler</identifier>
+              </field_access>
+              =
+              <identifier field="right" srow="24" scol="42" erow="24" ecol="73">massRolloutKafkaVinEventHandler</identifier>
+            </assignment_expression>
+            ;
+          </expression_statement>
+          <expression_statement srow="25" scol="8" erow="25" ecol="88">
+            <method_invocation srow="25" scol="8" erow="25" ecol="87">
+              <identifier field="object" srow="25" scol="8" erow="25" ecol="20">objectMapper</identifier>
+              .
+              <identifier field="name" srow="25" scol="21" erow="25" ecol="30">configure</identifier>
+              <argument_list field="arguments" srow="25" scol="30" erow="25" ecol="87">
+                (
+                <field_access srow="25" scol="31" erow="25" ecol="80">
+                  <identifier field="object" srow="25" scol="31" erow="25" ecol="53">DeserializationFeature</identifier>
+                  .
+                  <identifier field="field" srow="25" scol="54" erow="25" ecol="80">FAIL_ON_UNKNOWN_PROPERTIES</identifier>
+                </field_access>
+                ,
+                <true srow="25" scol="82" erow="25" ecol="86">true</true>
+                )
+              </argument_list>
+            </method_invocation>
+            ;
+          </expression_statement>
+          }
+        </constructor_body>
+      </constructor_declaration>
+      <block_comment srow="28" scol="4" erow="32" ecol="7">/**
+     * Kafka Listener to consume all the VIN list from MassRollout Kafka Topic
+     *
+     * @param message
+     */</block_comment>
+      <method_declaration srow="33" scol="4" erow="46" ecol="5">
+        <modifiers srow="33" scol="4" erow="34" ecol="10">
+          <annotation srow="33" scol="4" erow="33" ecol="186">
+            @
+            <identifier field="name" srow="33" scol="5" erow="33" ecol="19">RabbitListener</identifier>
+            <annotation_argument_list field="arguments" srow="33" scol="19" erow="33" ecol="186">
+              (
+              <element_value_pair srow="33" scol="20" erow="33" ecol="77">
+                <identifier field="key" srow="33" scol="20" erow="33" ecol="26">queues</identifier>
+                =
+                <string_literal field="value" srow="33" scol="29" erow="33" ecol="77">
+                  "
+                  <string_fragment srow="33" scol="30" erow="33" ecol="76">${rabbitmq.firemassrollout.message.queue.name}</string_fragment>
+                  "
+                </string_literal>
+              </element_value_pair>
+              ,
+              <element_value_pair srow="33" scol="79" erow="33" ecol="122">
+                <identifier field="key" srow="33" scol="79" erow="33" ecol="84">group</identifier>
+                =
+                <string_literal field="value" srow="33" scol="87" erow="33" ecol="122">
+                  "
+                  <string_fragment srow="33" scol="88" erow="33" ecol="121">${rabbitmq.firemassrollout.group}</string_fragment>
+                  "
+                </string_literal>
+              </element_value_pair>
+              ,
+              <element_value_pair srow="33" scol="124" erow="33" ecol="168">
+                <identifier field="key" srow="33" scol="124" erow="33" ecol="140">containerFactory</identifier>
+                =
+                <string_literal field="value" srow="33" scol="143" erow="33" ecol="168">
+                  "
+                  <string_fragment srow="33" scol="144" erow="33" ecol="167">containerFactoryAckAuto</string_fragment>
+                  "
+                </string_literal>
+              </element_value_pair>
+              ,
+              <element_value_pair srow="33" scol="169" erow="33" ecol="185">
+                <identifier field="key" srow="33" scol="169" erow="33" ecol="178">exclusive</identifier>
+                =
+                <true field="value" srow="33" scol="181" erow="33" ecol="185">true</true>
+              </element_value_pair>
+              )
+            </annotation_argument_list>
+          </annotation>
+          public
+        </modifiers>
+        <void_type field="type" srow="34" scol="11" erow="34" ecol="15">void</void_type>
+        <identifier field="name" srow="34" scol="16" erow="34" ecol="38">listenMassRolloutEvent</identifier>
+        <formal_parameters field="parameters" srow="34" scol="38" erow="34" ecol="54">
+          (
+          <formal_parameter srow="34" scol="39" erow="34" ecol="53">
+            <type_identifier field="type" srow="34" scol="39" erow="34" ecol="45">String</type_identifier>
+            <identifier field="name" srow="34" scol="46" erow="34" ecol="53">message</identifier>
+          </formal_parameter>
+          )
+        </formal_parameters>
+        <block field="body" srow="34" scol="55" erow="46" ecol="5">
+          {
+          <try_statement srow="35" scol="8" erow="45" ecol="9">
+            try
+            <block field="body" srow="35" scol="12" erow="41" ecol="9">
+              {
+              <local_variable_declaration srow="36" scol="12" erow="36" ecol="92">
+                <type_identifier field="type" srow="36" scol="12" erow="36" ecol="24">FlareMessage</type_identifier>
+                <variable_declarator field="declarator" srow="36" scol="25" erow="36" ecol="91">
+                  <identifier field="name" srow="36" scol="25" erow="36" ecol="37">flareMessage</identifier>
+                  =
+                  <method_invocation field="value" srow="36" scol="40" erow="36" ecol="91">
+                    <identifier field="object" srow="36" scol="40" erow="36" ecol="52">objectMapper</identifier>
+                    .
+                    <identifier field="name" srow="36" scol="53" erow="36" ecol="62">readValue</identifier>
+                    <argument_list field="arguments" srow="36" scol="62" erow="36" ecol="91">
+                      (
+                      <identifier srow="36" scol="63" erow="36" ecol="70">message</identifier>
+                      ,
+                      <class_literal srow="36" scol="72" erow="36" ecol="90">
+                        <type_identifier srow="36" scol="72" erow="36" ecol="84">FlareMessage</type_identifier>
+                        .
+                        class
+                      </class_literal>
+                      )
+                    </argument_list>
+                  </method_invocation>
+                </variable_declarator>
+                ;
+              </local_variable_declaration>
+              <expression_statement srow="38" scol="12" erow="39" ecol="51">
+                <method_invocation srow="38" scol="12" erow="39" ecol="50">
+                  <identifier field="object" srow="38" scol="12" erow="38" ecol="15">log</identifier>
+                  .
+                  <identifier field="name" srow="38" scol="16" erow="38" ecol="20">info</identifier>
+                  <argument_list field="arguments" srow="38" scol="20" erow="39" ecol="50">
+                    (
+                    <string_literal srow="38" scol="21" erow="38" ecol="119">
+                      "
+                      <string_fragment srow="38" scol="22" erow="38" ecol="118">listenMassRolloutEvent() ... Message received from FLARE mass rollout topic for discoveryId : {}</string_fragment>
+                      "
+                    </string_literal>
+                    ,
+                    <method_invocation srow="39" scol="20" erow="39" ecol="49">
+                      <identifier field="object" srow="39" scol="20" erow="39" ecol="32">flareMessage</identifier>
+                      .
+                      <identifier field="name" srow="39" scol="33" erow="39" ecol="47">getDiscoveryId</identifier>
+                      <argument_list field="arguments" srow="39" scol="47" erow="39" ecol="49">
+                        (
+                        )
+                      </argument_list>
+                    </method_invocation>
+                    )
+                  </argument_list>
+                </method_invocation>
+                ;
+              </expression_statement>
+              <expression_statement srow="40" scol="12" erow="40" ecol="68">
+                <method_invocation srow="40" scol="12" erow="40" ecol="67">
+                  <identifier field="object" srow="40" scol="12" erow="40" ecol="38">massRolloutVinEventHandler</identifier>
+                  .
+                  <identifier field="name" srow="40" scol="39" erow="40" ecol="53">handleAddEvent</identifier>
+                  <argument_list field="arguments" srow="40" scol="53" erow="40" ecol="67">
+                    (
+                    <identifier srow="40" scol="54" erow="40" ecol="66">flareMessage</identifier>
+                    )
+                  </argument_list>
+                </method_invocation>
+                ;
+              </expression_statement>
+              }
+            </block>
+            <catch_clause srow="41" scol="10" erow="45" ecol="9">
+              catch
+              (
+              <catch_formal_parameter srow="41" scol="17" erow="41" ecol="30">
+                <catch_type srow="41" scol="17" erow="41" ecol="26">
+                  <type_identifier srow="41" scol="17" erow="41" ecol="26">Exception</type_identifier>
+                </catch_type>
+                <identifier field="name" srow="41" scol="27" erow="41" ecol="30">exe</identifier>
+              </catch_formal_parameter>
+              )
+              <block field="body" srow="41" scol="32" erow="45" ecol="9">
+                {
+                <expression_statement srow="42" scol="12" erow="43" ecol="59">
+                  <method_invocation srow="42" scol="12" erow="43" ecol="58">
+                    <identifier field="object" srow="42" scol="12" erow="42" ecol="15">log</identifier>
+                    .
+                    <identifier field="name" srow="42" scol="16" erow="42" ecol="21">error</identifier>
+                    <argument_list field="arguments" srow="42" scol="21" erow="43" ecol="58">
+                      (
+                      <string_literal srow="42" scol="22" erow="42" ecol="116">
+                        "
+                        <string_fragment srow="42" scol="23" erow="42" ecol="115">CRITICAL FAILURE (RABBITMQ): listenMassRolloutEvent() ...Error processing rabbit message: {}</string_fragment>
+                        "
+                      </string_literal>
+                      ,
+                      <method_invocation srow="43" scol="20" erow="43" ecol="57">
+                        <identifier field="object" srow="43" scol="20" erow="43" ecol="27">LogUtil</identifier>
+                        .
+                        <identifier field="name" srow="43" scol="28" erow="43" ecol="52">getErrorStrFromException</identifier>
+                        <argument_list field="arguments" srow="43" scol="52" erow="43" ecol="57">
+                          (
+                          <identifier srow="43" scol="53" erow="43" ecol="56">exe</identifier>
+                          )
+                        </argument_list>
+                      </method_invocation>
+                      )
+                    </argument_list>
+                  </method_invocation>
+                  ;
+                </expression_statement>
+                <throw_statement srow="44" scol="12" erow="44" ecol="61">
+                  throw
+                  <object_creation_expression srow="44" scol="18" erow="44" ecol="60">
+                    new
+                    <type_identifier field="type" srow="44" scol="22" erow="44" ecol="55">AmqpRejectAndDontRequeueException</type_identifier>
+                    <argument_list field="arguments" srow="44" scol="55" erow="44" ecol="60">
+                      (
+                      <identifier srow="44" scol="56" erow="44" ecol="59">exe</identifier>
+                      )
+                    </argument_list>
+                  </object_creation_expression>
+                  ;
+                </throw_statement>
+                }
+              </block>
+            </catch_clause>
+          </try_statement>
+          }
+        </block>
+      </method_declaration>
+      <method_declaration srow="48" scol="4" erow="62" ecol="5">
+        <modifiers srow="48" scol="4" erow="49" ecol="10">
+          <annotation srow="48" scol="4" erow="48" ecol="193">
+            @
+            <identifier field="name" srow="48" scol="5" erow="48" ecol="19">RabbitListener</identifier>
+            <annotation_argument_list field="arguments" srow="48" scol="19" erow="48" ecol="193">
+              (
+              <element_value_pair srow="48" scol="20" erow="48" ecol="84">
+                <identifier field="key" srow="48" scol="20" erow="48" ecol="26">queues</identifier>
+                =
+                <string_literal field="value" srow="48" scol="29" erow="48" ecol="84">
+                  "
+                  <string_fragment srow="48" scol="30" erow="48" ecol="83">${rabbitmq.firemassrollout.remove.message.queue.name}</string_fragment>
+                  "
+                </string_literal>
+              </element_value_pair>
+              ,
+              <element_value_pair srow="48" scol="86" erow="48" ecol="129">
+                <identifier field="key" srow="48" scol="86" erow="48" ecol="91">group</identifier>
+                =
+                <string_literal field="value" srow="48" scol="94" erow="48" ecol="129">
+                  "
+                  <string_fragment srow="48" scol="95" erow="48" ecol="128">${rabbitmq.firemassrollout.group}</string_fragment>
+                  "
+                </string_literal>
+              </element_value_pair>
+              ,
+              <element_value_pair srow="48" scol="131" erow="48" ecol="175">
+                <identifier field="key" srow="48" scol="131" erow="48" ecol="147">containerFactory</identifier>
+                =
+                <string_literal field="value" srow="48" scol="150" erow="48" ecol="175">
+                  "
+                  <string_fragment srow="48" scol="151" erow="48" ecol="174">containerFactoryAckAuto</string_fragment>
+                  "
+                </string_literal>
+              </element_value_pair>
+              ,
+              <element_value_pair srow="48" scol="176" erow="48" ecol="192">
+                <identifier field="key" srow="48" scol="176" erow="48" ecol="185">exclusive</identifier>
+                =
+                <true field="value" srow="48" scol="188" erow="48" ecol="192">true</true>
+              </element_value_pair>
+              )
+            </annotation_argument_list>
+          </annotation>
+          public
+        </modifiers>
+        <void_type field="type" srow="49" scol="11" erow="49" ecol="15">void</void_type>
+        <identifier field="name" srow="49" scol="16" erow="49" ecol="33">listenRemoveEvent</identifier>
+        <formal_parameters field="parameters" srow="49" scol="33" erow="49" ecol="49">
+          (
+          <formal_parameter srow="49" scol="34" erow="49" ecol="48">
+            <type_identifier field="type" srow="49" scol="34" erow="49" ecol="40">String</type_identifier>
+            <identifier field="name" srow="49" scol="41" erow="49" ecol="48">message</identifier>
+          </formal_parameter>
+          )
+        </formal_parameters>
+        <block field="body" srow="49" scol="50" erow="62" ecol="5">
+          {
+          <try_statement srow="50" scol="8" erow="61" ecol="9">
+            try
+            <block field="body" srow="50" scol="12" erow="57" ecol="9">
+              {
+              <local_variable_declaration srow="51" scol="12" erow="51" ecol="92">
+                <type_identifier field="type" srow="51" scol="12" erow="51" ecol="24">FlareMessage</type_identifier>
+                <variable_declarator field="declarator" srow="51" scol="25" erow="51" ecol="91">
+                  <identifier field="name" srow="51" scol="25" erow="51" ecol="37">flareMessage</identifier>
+                  =
+                  <method_invocation field="value" srow="51" scol="40" erow="51" ecol="91">
+                    <identifier field="object" srow="51" scol="40" erow="51" ecol="52">objectMapper</identifier>
+                    .
+                    <identifier field="name" srow="51" scol="53" erow="51" ecol="62">readValue</identifier>
+                    <argument_list field="arguments" srow="51" scol="62" erow="51" ecol="91">
+                      (
+                      <identifier srow="51" scol="63" erow="51" ecol="70">message</identifier>
+                      ,
+                      <class_literal srow="51" scol="72" erow="51" ecol="90">
+                        <type_identifier srow="51" scol="72" erow="51" ecol="84">FlareMessage</type_identifier>
+                        .
+                        class
+                      </class_literal>
+                      )
+                    </argument_list>
+                  </method_invocation>
+                </variable_declarator>
+                ;
+              </local_variable_declaration>
+              <expression_statement srow="53" scol="12" erow="54" ecol="51">
+                <method_invocation srow="53" scol="12" erow="54" ecol="50">
+                  <identifier field="object" srow="53" scol="12" erow="53" ecol="15">log</identifier>
+                  .
+                  <identifier field="name" srow="53" scol="16" erow="53" ecol="20">info</identifier>
+                  <argument_list field="arguments" srow="53" scol="20" erow="54" ecol="50">
+                    (
+                    <string_literal srow="53" scol="21" erow="53" ecol="121">
+                      "
+                      <string_fragment srow="53" scol="22" erow="53" ecol="120">listenRemoveEvent() ... Remove message received from FLARE mass rollout topic for discoveryId : {}</string_fragment>
+                      "
+                    </string_literal>
+                    ,
+                    <method_invocation srow="54" scol="20" erow="54" ecol="49">
+                      <identifier field="object" srow="54" scol="20" erow="54" ecol="32">flareMessage</identifier>
+                      .
+                      <identifier field="name" srow="54" scol="33" erow="54" ecol="47">getDiscoveryId</identifier>
+                      <argument_list field="arguments" srow="54" scol="47" erow="54" ecol="49">
+                        (
+                        )
+                      </argument_list>
+                    </method_invocation>
+                    )
+                  </argument_list>
+                </method_invocation>
+                ;
+              </expression_statement>
+              <expression_statement srow="56" scol="12" erow="56" ecol="71">
+                <method_invocation srow="56" scol="12" erow="56" ecol="70">
+                  <identifier field="object" srow="56" scol="12" erow="56" ecol="38">massRolloutVinEventHandler</identifier>
+                  .
+                  <identifier field="name" srow="56" scol="39" erow="56" ecol="56">handleRemoveEvent</identifier>
+                  <argument_list field="arguments" srow="56" scol="56" erow="56" ecol="70">
+                    (
+                    <identifier srow="56" scol="57" erow="56" ecol="69">flareMessage</identifier>
+                    )
+                  </argument_list>
+                </method_invocation>
+                ;
+              </expression_statement>
+              }
+            </block>
+            <catch_clause srow="57" scol="10" erow="61" ecol="9">
+              catch
+              (
+              <catch_formal_parameter srow="57" scol="17" erow="57" ecol="30">
+                <catch_type srow="57" scol="17" erow="57" ecol="26">
+                  <type_identifier srow="57" scol="17" erow="57" ecol="26">Exception</type_identifier>
+                </catch_type>
+                <identifier field="name" srow="57" scol="27" erow="57" ecol="30">exe</identifier>
+              </catch_formal_parameter>
+              )
+              <block field="body" srow="57" scol="32" erow="61" ecol="9">
+                {
+                <expression_statement srow="58" scol="12" erow="59" ecol="59">
+                  <method_invocation srow="58" scol="12" erow="59" ecol="58">
+                    <identifier field="object" srow="58" scol="12" erow="58" ecol="15">log</identifier>
+                    .
+                    <identifier field="name" srow="58" scol="16" erow="58" ecol="21">error</identifier>
+                    <argument_list field="arguments" srow="58" scol="21" erow="59" ecol="58">
+                      (
+                      <string_literal srow="58" scol="22" erow="58" ecol="111">
+                        "
+                        <string_fragment srow="58" scol="23" erow="58" ecol="110">CRITICAL FAILURE (RABBITMQ): listenRemoveEvent() ...Error processing rabbit message: {}</string_fragment>
+                        "
+                      </string_literal>
+                      ,
+                      <method_invocation srow="59" scol="20" erow="59" ecol="57">
+                        <identifier field="object" srow="59" scol="20" erow="59" ecol="27">LogUtil</identifier>
+                        .
+                        <identifier field="name" srow="59" scol="28" erow="59" ecol="52">getErrorStrFromException</identifier>
+                        <argument_list field="arguments" srow="59" scol="52" erow="59" ecol="57">
+                          (
+                          <identifier srow="59" scol="53" erow="59" ecol="56">exe</identifier>
+                          )
+                        </argument_list>
+                      </method_invocation>
+                      )
+                    </argument_list>
+                  </method_invocation>
+                  ;
+                </expression_statement>
+                <throw_statement srow="60" scol="12" erow="60" ecol="61">
+                  throw
+                  <object_creation_expression srow="60" scol="18" erow="60" ecol="60">
+                    new
+                    <type_identifier field="type" srow="60" scol="22" erow="60" ecol="55">AmqpRejectAndDontRequeueException</type_identifier>
+                    <argument_list field="arguments" srow="60" scol="55" erow="60" ecol="60">
+                      (
+                      <identifier srow="60" scol="56" erow="60" ecol="59">exe</identifier>
+                      )
+                    </argument_list>
+                  </object_creation_expression>
+                  ;
+                </throw_statement>
+                }
+              </block>
+            </catch_clause>
+          </try_statement>
+          }
+        </block>
+      </method_declaration>
+      }
+    </class_body>
+  </class_declaration>
+</program>

@@ -1,0 +1,604 @@
+<?xml version="1.0"?>
+<program srow="0" scol="0" erow="57" ecol="0">
+  <package_declaration srow="0" scol="0" erow="0" ecol="38">
+    package
+    <scoped_identifier srow="0" scol="8" erow="0" ecol="37">
+      <scoped_identifier field="scope" srow="0" scol="8" erow="0" ecol="19">
+        <identifier field="scope" srow="0" scol="8" erow="0" ecol="11">com</identifier>
+        .
+        <identifier field="name" srow="0" scol="12" erow="0" ecol="19">example</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="0" scol="20" erow="0" ecol="37">messagingrabbitmq</identifier>
+    </scoped_identifier>
+    ;
+  </package_declaration>
+  <import_declaration srow="2" scol="0" erow="2" ecol="45">
+    import
+    <scoped_identifier srow="2" scol="7" erow="2" ecol="44">
+      <scoped_identifier field="scope" srow="2" scol="7" erow="2" ecol="36">
+        <scoped_identifier field="scope" srow="2" scol="7" erow="2" ecol="31">
+          <scoped_identifier field="scope" srow="2" scol="7" erow="2" ecol="26">
+            <identifier field="scope" srow="2" scol="7" erow="2" ecol="10">org</identifier>
+            .
+            <identifier field="name" srow="2" scol="11" erow="2" ecol="26">springframework</identifier>
+          </scoped_identifier>
+          .
+          <identifier field="name" srow="2" scol="27" erow="2" ecol="31">amqp</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="2" scol="32" erow="2" ecol="36">core</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="2" scol="37" erow="2" ecol="44">Binding</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="3" scol="0" erow="3" ecol="52">
+    import
+    <scoped_identifier srow="3" scol="7" erow="3" ecol="51">
+      <scoped_identifier field="scope" srow="3" scol="7" erow="3" ecol="36">
+        <scoped_identifier field="scope" srow="3" scol="7" erow="3" ecol="31">
+          <scoped_identifier field="scope" srow="3" scol="7" erow="3" ecol="26">
+            <identifier field="scope" srow="3" scol="7" erow="3" ecol="10">org</identifier>
+            .
+            <identifier field="name" srow="3" scol="11" erow="3" ecol="26">springframework</identifier>
+          </scoped_identifier>
+          .
+          <identifier field="name" srow="3" scol="27" erow="3" ecol="31">amqp</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="3" scol="32" erow="3" ecol="36">core</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="3" scol="37" erow="3" ecol="51">BindingBuilder</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="4" scol="0" erow="4" ecol="43">
+    import
+    <scoped_identifier srow="4" scol="7" erow="4" ecol="42">
+      <scoped_identifier field="scope" srow="4" scol="7" erow="4" ecol="36">
+        <scoped_identifier field="scope" srow="4" scol="7" erow="4" ecol="31">
+          <scoped_identifier field="scope" srow="4" scol="7" erow="4" ecol="26">
+            <identifier field="scope" srow="4" scol="7" erow="4" ecol="10">org</identifier>
+            .
+            <identifier field="name" srow="4" scol="11" erow="4" ecol="26">springframework</identifier>
+          </scoped_identifier>
+          .
+          <identifier field="name" srow="4" scol="27" erow="4" ecol="31">amqp</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="4" scol="32" erow="4" ecol="36">core</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="4" scol="37" erow="4" ecol="42">Queue</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="5" scol="0" erow="5" ecol="51">
+    import
+    <scoped_identifier srow="5" scol="7" erow="5" ecol="50">
+      <scoped_identifier field="scope" srow="5" scol="7" erow="5" ecol="36">
+        <scoped_identifier field="scope" srow="5" scol="7" erow="5" ecol="31">
+          <scoped_identifier field="scope" srow="5" scol="7" erow="5" ecol="26">
+            <identifier field="scope" srow="5" scol="7" erow="5" ecol="10">org</identifier>
+            .
+            <identifier field="name" srow="5" scol="11" erow="5" ecol="26">springframework</identifier>
+          </scoped_identifier>
+          .
+          <identifier field="name" srow="5" scol="27" erow="5" ecol="31">amqp</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="5" scol="32" erow="5" ecol="36">core</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="5" scol="37" erow="5" ecol="50">TopicExchange</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="6" scol="0" erow="6" ecol="68">
+    import
+    <scoped_identifier srow="6" scol="7" erow="6" ecol="67">
+      <scoped_identifier field="scope" srow="6" scol="7" erow="6" ecol="49">
+        <scoped_identifier field="scope" srow="6" scol="7" erow="6" ecol="38">
+          <scoped_identifier field="scope" srow="6" scol="7" erow="6" ecol="31">
+            <scoped_identifier field="scope" srow="6" scol="7" erow="6" ecol="26">
+              <identifier field="scope" srow="6" scol="7" erow="6" ecol="10">org</identifier>
+              .
+              <identifier field="name" srow="6" scol="11" erow="6" ecol="26">springframework</identifier>
+            </scoped_identifier>
+            .
+            <identifier field="name" srow="6" scol="27" erow="6" ecol="31">amqp</identifier>
+          </scoped_identifier>
+          .
+          <identifier field="name" srow="6" scol="32" erow="6" ecol="38">rabbit</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="6" scol="39" erow="6" ecol="49">connection</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="6" scol="50" erow="6" ecol="67">ConnectionFactory</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="7" scol="0" erow="7" ecol="79">
+    import
+    <scoped_identifier srow="7" scol="7" erow="7" ecol="78">
+      <scoped_identifier field="scope" srow="7" scol="7" erow="7" ecol="47">
+        <scoped_identifier field="scope" srow="7" scol="7" erow="7" ecol="38">
+          <scoped_identifier field="scope" srow="7" scol="7" erow="7" ecol="31">
+            <scoped_identifier field="scope" srow="7" scol="7" erow="7" ecol="26">
+              <identifier field="scope" srow="7" scol="7" erow="7" ecol="10">org</identifier>
+              .
+              <identifier field="name" srow="7" scol="11" erow="7" ecol="26">springframework</identifier>
+            </scoped_identifier>
+            .
+            <identifier field="name" srow="7" scol="27" erow="7" ecol="31">amqp</identifier>
+          </scoped_identifier>
+          .
+          <identifier field="name" srow="7" scol="32" erow="7" ecol="38">rabbit</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="7" scol="39" erow="7" ecol="47">listener</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="7" scol="48" erow="7" ecol="78">SimpleMessageListenerContainer</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="8" scol="0" erow="8" ecol="79">
+    import
+    <scoped_identifier srow="8" scol="7" erow="8" ecol="78">
+      <scoped_identifier field="scope" srow="8" scol="7" erow="8" ecol="55">
+        <scoped_identifier field="scope" srow="8" scol="7" erow="8" ecol="47">
+          <scoped_identifier field="scope" srow="8" scol="7" erow="8" ecol="38">
+            <scoped_identifier field="scope" srow="8" scol="7" erow="8" ecol="31">
+              <scoped_identifier field="scope" srow="8" scol="7" erow="8" ecol="26">
+                <identifier field="scope" srow="8" scol="7" erow="8" ecol="10">org</identifier>
+                .
+                <identifier field="name" srow="8" scol="11" erow="8" ecol="26">springframework</identifier>
+              </scoped_identifier>
+              .
+              <identifier field="name" srow="8" scol="27" erow="8" ecol="31">amqp</identifier>
+            </scoped_identifier>
+            .
+            <identifier field="name" srow="8" scol="32" erow="8" ecol="38">rabbit</identifier>
+          </scoped_identifier>
+          .
+          <identifier field="name" srow="8" scol="39" erow="8" ecol="47">listener</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="8" scol="48" erow="8" ecol="55">adapter</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="8" scol="56" erow="8" ecol="78">MessageListenerAdapter</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="9" scol="0" erow="9" ecol="50">
+    import
+    <scoped_identifier srow="9" scol="7" erow="9" ecol="49">
+      <scoped_identifier field="scope" srow="9" scol="7" erow="9" ecol="31">
+        <scoped_identifier field="scope" srow="9" scol="7" erow="9" ecol="26">
+          <identifier field="scope" srow="9" scol="7" erow="9" ecol="10">org</identifier>
+          .
+          <identifier field="name" srow="9" scol="11" erow="9" ecol="26">springframework</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="9" scol="27" erow="9" ecol="31">boot</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="9" scol="32" erow="9" ecol="49">SpringApplication</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="10" scol="0" erow="10" ecol="68">
+    import
+    <scoped_identifier srow="10" scol="7" erow="10" ecol="67">
+      <scoped_identifier field="scope" srow="10" scol="7" erow="10" ecol="45">
+        <scoped_identifier field="scope" srow="10" scol="7" erow="10" ecol="31">
+          <scoped_identifier field="scope" srow="10" scol="7" erow="10" ecol="26">
+            <identifier field="scope" srow="10" scol="7" erow="10" ecol="10">org</identifier>
+            .
+            <identifier field="name" srow="10" scol="11" erow="10" ecol="26">springframework</identifier>
+          </scoped_identifier>
+          .
+          <identifier field="name" srow="10" scol="27" erow="10" ecol="31">boot</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="10" scol="32" erow="10" ecol="45">autoconfigure</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="10" scol="46" erow="10" ecol="67">SpringBootApplication</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <import_declaration srow="11" scol="0" erow="11" ecol="51">
+    import
+    <scoped_identifier srow="11" scol="7" erow="11" ecol="50">
+      <scoped_identifier field="scope" srow="11" scol="7" erow="11" ecol="45">
+        <scoped_identifier field="scope" srow="11" scol="7" erow="11" ecol="34">
+          <scoped_identifier field="scope" srow="11" scol="7" erow="11" ecol="26">
+            <identifier field="scope" srow="11" scol="7" erow="11" ecol="10">org</identifier>
+            .
+            <identifier field="name" srow="11" scol="11" erow="11" ecol="26">springframework</identifier>
+          </scoped_identifier>
+          .
+          <identifier field="name" srow="11" scol="27" erow="11" ecol="34">context</identifier>
+        </scoped_identifier>
+        .
+        <identifier field="name" srow="11" scol="35" erow="11" ecol="45">annotation</identifier>
+      </scoped_identifier>
+      .
+      <identifier field="name" srow="11" scol="46" erow="11" ecol="50">Bean</identifier>
+    </scoped_identifier>
+    ;
+  </import_declaration>
+  <class_declaration srow="13" scol="0" erow="56" ecol="1">
+    <modifiers srow="13" scol="0" erow="14" ecol="6">
+      <marker_annotation srow="13" scol="0" erow="13" ecol="22">
+        @
+        <identifier field="name" srow="13" scol="1" erow="13" ecol="22">SpringBootApplication</identifier>
+      </marker_annotation>
+      public
+    </modifiers>
+    class
+    <identifier field="name" srow="14" scol="13" erow="14" ecol="41">MessagingRabbitmqApplication</identifier>
+    <class_body field="body" srow="14" scol="42" erow="56" ecol="1">
+      {
+      <field_declaration srow="16" scol="4" erow="16" ecol="67">
+        <modifiers srow="16" scol="4" erow="16" ecol="16">
+          static
+          final
+        </modifiers>
+        <type_identifier field="type" srow="16" scol="17" erow="16" ecol="23">String</type_identifier>
+        <variable_declarator field="declarator" srow="16" scol="24" erow="16" ecol="66">
+          <identifier field="name" srow="16" scol="24" erow="16" ecol="41">topicExchangeName</identifier>
+          =
+          <string_literal field="value" srow="16" scol="44" erow="16" ecol="66">
+            "
+            <string_fragment srow="16" scol="45" erow="16" ecol="65">spring-boot-exchange</string_fragment>
+            "
+          </string_literal>
+        </variable_declarator>
+        ;
+      </field_declaration>
+      <field_declaration srow="18" scol="4" erow="18" ecol="50">
+        <modifiers srow="18" scol="4" erow="18" ecol="16">
+          static
+          final
+        </modifiers>
+        <type_identifier field="type" srow="18" scol="17" erow="18" ecol="23">String</type_identifier>
+        <variable_declarator field="declarator" srow="18" scol="24" erow="18" ecol="49">
+          <identifier field="name" srow="18" scol="24" erow="18" ecol="33">queueName</identifier>
+          =
+          <string_literal field="value" srow="18" scol="36" erow="18" ecol="49">
+            "
+            <string_fragment srow="18" scol="37" erow="18" ecol="48">spring-boot</string_fragment>
+            "
+          </string_literal>
+        </variable_declarator>
+        ;
+      </field_declaration>
+      <field_declaration srow="20" scol="4" erow="20" ecol="49">
+        <modifiers srow="20" scol="4" erow="20" ecol="16">
+          static
+          final
+        </modifiers>
+        <type_identifier field="type" srow="20" scol="17" erow="20" ecol="23">String</type_identifier>
+        <variable_declarator field="declarator" srow="20" scol="24" erow="20" ecol="48">
+          <identifier field="name" srow="20" scol="24" erow="20" ecol="34">routingKey</identifier>
+          =
+          <string_literal field="value" srow="20" scol="37" erow="20" ecol="48">
+            "
+            <string_fragment srow="20" scol="38" erow="20" ecol="47">foo.bar.#</string_fragment>
+            "
+          </string_literal>
+        </variable_declarator>
+        ;
+      </field_declaration>
+      <method_declaration srow="22" scol="4" erow="24" ecol="5">
+        <modifiers srow="22" scol="4" erow="22" ecol="17">
+          public
+          static
+        </modifiers>
+        <void_type field="type" srow="22" scol="18" erow="22" ecol="22">void</void_type>
+        <identifier field="name" srow="22" scol="23" erow="22" ecol="27">main</identifier>
+        <formal_parameters field="parameters" srow="22" scol="27" erow="22" ecol="42">
+          (
+          <formal_parameter srow="22" scol="28" erow="22" ecol="41">
+            <array_type field="type" srow="22" scol="28" erow="22" ecol="36">
+              <type_identifier field="element" srow="22" scol="28" erow="22" ecol="34">String</type_identifier>
+              <dimensions field="dimensions" srow="22" scol="34" erow="22" ecol="36">
+                [
+                ]
+              </dimensions>
+            </array_type>
+            <identifier field="name" srow="22" scol="37" erow="22" ecol="41">args</identifier>
+          </formal_parameter>
+          )
+        </formal_parameters>
+        <throws srow="22" scol="43" erow="22" ecol="70">
+          throws
+          <type_identifier srow="22" scol="50" erow="22" ecol="70">InterruptedException</type_identifier>
+        </throws>
+        <block field="body" srow="22" scol="71" erow="24" ecol="5">
+          {
+          <expression_statement srow="23" scol="8" erow="23" ecol="72">
+            <method_invocation srow="23" scol="8" erow="23" ecol="71">
+              <identifier field="object" srow="23" scol="8" erow="23" ecol="25">SpringApplication</identifier>
+              .
+              <identifier field="name" srow="23" scol="26" erow="23" ecol="29">run</identifier>
+              <argument_list field="arguments" srow="23" scol="29" erow="23" ecol="71">
+                (
+                <class_literal srow="23" scol="30" erow="23" ecol="64">
+                  <type_identifier srow="23" scol="30" erow="23" ecol="58">MessagingRabbitmqApplication</type_identifier>
+                  .
+                  class
+                </class_literal>
+                ,
+                <identifier srow="23" scol="66" erow="23" ecol="70">args</identifier>
+                )
+              </argument_list>
+            </method_invocation>
+            ;
+          </expression_statement>
+          }
+        </block>
+      </method_declaration>
+      <method_declaration srow="26" scol="4" erow="29" ecol="5">
+        <modifiers srow="26" scol="4" erow="26" ecol="9">
+          <marker_annotation srow="26" scol="4" erow="26" ecol="9">
+            @
+            <identifier field="name" srow="26" scol="5" erow="26" ecol="9">Bean</identifier>
+          </marker_annotation>
+        </modifiers>
+        <type_identifier field="type" srow="27" scol="4" erow="27" ecol="9">Queue</type_identifier>
+        <identifier field="name" srow="27" scol="10" erow="27" ecol="15">queue</identifier>
+        <formal_parameters field="parameters" srow="27" scol="15" erow="27" ecol="17">
+          (
+          )
+        </formal_parameters>
+        <block field="body" srow="27" scol="18" erow="29" ecol="5">
+          {
+          <return_statement srow="28" scol="8" erow="28" ecol="43">
+            return
+            <object_creation_expression srow="28" scol="15" erow="28" ecol="42">
+              new
+              <type_identifier field="type" srow="28" scol="19" erow="28" ecol="24">Queue</type_identifier>
+              <argument_list field="arguments" srow="28" scol="24" erow="28" ecol="42">
+                (
+                <identifier srow="28" scol="25" erow="28" ecol="34">queueName</identifier>
+                ,
+                <false srow="28" scol="36" erow="28" ecol="41">false</false>
+                )
+              </argument_list>
+            </object_creation_expression>
+            ;
+          </return_statement>
+          }
+        </block>
+      </method_declaration>
+      <method_declaration srow="31" scol="4" erow="34" ecol="5">
+        <modifiers srow="31" scol="4" erow="31" ecol="9">
+          <marker_annotation srow="31" scol="4" erow="31" ecol="9">
+            @
+            <identifier field="name" srow="31" scol="5" erow="31" ecol="9">Bean</identifier>
+          </marker_annotation>
+        </modifiers>
+        <type_identifier field="type" srow="32" scol="4" erow="32" ecol="17">TopicExchange</type_identifier>
+        <identifier field="name" srow="32" scol="18" erow="32" ecol="26">exchange</identifier>
+        <formal_parameters field="parameters" srow="32" scol="26" erow="32" ecol="28">
+          (
+          )
+        </formal_parameters>
+        <block field="body" srow="32" scol="29" erow="34" ecol="5">
+          {
+          <return_statement srow="33" scol="8" erow="33" ecol="52">
+            return
+            <object_creation_expression srow="33" scol="15" erow="33" ecol="51">
+              new
+              <type_identifier field="type" srow="33" scol="19" erow="33" ecol="32">TopicExchange</type_identifier>
+              <argument_list field="arguments" srow="33" scol="32" erow="33" ecol="51">
+                (
+                <identifier srow="33" scol="33" erow="33" ecol="50">topicExchangeName</identifier>
+                )
+              </argument_list>
+            </object_creation_expression>
+            ;
+          </return_statement>
+          }
+        </block>
+      </method_declaration>
+      <method_declaration srow="36" scol="4" erow="39" ecol="5">
+        <modifiers srow="36" scol="4" erow="36" ecol="9">
+          <marker_annotation srow="36" scol="4" erow="36" ecol="9">
+            @
+            <identifier field="name" srow="36" scol="5" erow="36" ecol="9">Bean</identifier>
+          </marker_annotation>
+        </modifiers>
+        <type_identifier field="type" srow="37" scol="4" erow="37" ecol="11">Binding</type_identifier>
+        <identifier field="name" srow="37" scol="12" erow="37" ecol="19">binding</identifier>
+        <formal_parameters field="parameters" srow="37" scol="19" erow="37" ecol="56">
+          (
+          <formal_parameter srow="37" scol="20" erow="37" ecol="31">
+            <type_identifier field="type" srow="37" scol="20" erow="37" ecol="25">Queue</type_identifier>
+            <identifier field="name" srow="37" scol="26" erow="37" ecol="31">queue</identifier>
+          </formal_parameter>
+          ,
+          <formal_parameter srow="37" scol="33" erow="37" ecol="55">
+            <type_identifier field="type" srow="37" scol="33" erow="37" ecol="46">TopicExchange</type_identifier>
+            <identifier field="name" srow="37" scol="47" erow="37" ecol="55">exchange</identifier>
+          </formal_parameter>
+          )
+        </formal_parameters>
+        <block field="body" srow="37" scol="57" erow="39" ecol="5">
+          {
+          <return_statement srow="38" scol="8" erow="38" ecol="72">
+            return
+            <method_invocation srow="38" scol="15" erow="38" ecol="71">
+              <method_invocation field="object" srow="38" scol="15" erow="38" ecol="54">
+                <method_invocation field="object" srow="38" scol="15" erow="38" ecol="41">
+                  <identifier field="object" srow="38" scol="15" erow="38" ecol="29">BindingBuilder</identifier>
+                  .
+                  <identifier field="name" srow="38" scol="30" erow="38" ecol="34">bind</identifier>
+                  <argument_list field="arguments" srow="38" scol="34" erow="38" ecol="41">
+                    (
+                    <identifier srow="38" scol="35" erow="38" ecol="40">queue</identifier>
+                    )
+                  </argument_list>
+                </method_invocation>
+                .
+                <identifier field="name" srow="38" scol="42" erow="38" ecol="44">to</identifier>
+                <argument_list field="arguments" srow="38" scol="44" erow="38" ecol="54">
+                  (
+                  <identifier srow="38" scol="45" erow="38" ecol="53">exchange</identifier>
+                  )
+                </argument_list>
+              </method_invocation>
+              .
+              <identifier field="name" srow="38" scol="55" erow="38" ecol="59">with</identifier>
+              <argument_list field="arguments" srow="38" scol="59" erow="38" ecol="71">
+                (
+                <identifier srow="38" scol="60" erow="38" ecol="70">routingKey</identifier>
+                )
+              </argument_list>
+            </method_invocation>
+            ;
+          </return_statement>
+          }
+        </block>
+      </method_declaration>
+      <method_declaration srow="41" scol="4" erow="49" ecol="5">
+        <modifiers srow="41" scol="4" erow="41" ecol="9">
+          <marker_annotation srow="41" scol="4" erow="41" ecol="9">
+            @
+            <identifier field="name" srow="41" scol="5" erow="41" ecol="9">Bean</identifier>
+          </marker_annotation>
+        </modifiers>
+        <type_identifier field="type" srow="42" scol="4" erow="42" ecol="34">SimpleMessageListenerContainer</type_identifier>
+        <identifier field="name" srow="42" scol="35" erow="42" ecol="44">container</identifier>
+        <formal_parameters field="parameters" srow="42" scol="44" erow="43" ecol="84">
+          (
+          <formal_parameter srow="42" scol="45" erow="42" ecol="80">
+            <type_identifier field="type" srow="42" scol="45" erow="42" ecol="62">ConnectionFactory</type_identifier>
+            <identifier field="name" srow="42" scol="63" erow="42" ecol="80">connectionFactory</identifier>
+          </formal_parameter>
+          ,
+          <formal_parameter srow="43" scol="45" erow="43" ecol="83">
+            <type_identifier field="type" srow="43" scol="45" erow="43" ecol="67">MessageListenerAdapter</type_identifier>
+            <identifier field="name" srow="43" scol="68" erow="43" ecol="83">listenerAdapter</identifier>
+          </formal_parameter>
+          )
+        </formal_parameters>
+        <block field="body" srow="43" scol="85" erow="49" ecol="5">
+          {
+          <local_variable_declaration srow="44" scol="8" erow="44" ecol="88">
+            <type_identifier field="type" srow="44" scol="8" erow="44" ecol="38">SimpleMessageListenerContainer</type_identifier>
+            <variable_declarator field="declarator" srow="44" scol="39" erow="44" ecol="87">
+              <identifier field="name" srow="44" scol="39" erow="44" ecol="48">container</identifier>
+              =
+              <object_creation_expression field="value" srow="44" scol="51" erow="44" ecol="87">
+                new
+                <type_identifier field="type" srow="44" scol="55" erow="44" ecol="85">SimpleMessageListenerContainer</type_identifier>
+                <argument_list field="arguments" srow="44" scol="85" erow="44" ecol="87">
+                  (
+                  )
+                </argument_list>
+              </object_creation_expression>
+            </variable_declarator>
+            ;
+          </local_variable_declaration>
+          <expression_statement srow="45" scol="8" erow="45" ecol="58">
+            <method_invocation srow="45" scol="8" erow="45" ecol="57">
+              <identifier field="object" srow="45" scol="8" erow="45" ecol="17">container</identifier>
+              .
+              <identifier field="name" srow="45" scol="18" erow="45" ecol="38">setConnectionFactory</identifier>
+              <argument_list field="arguments" srow="45" scol="38" erow="45" ecol="57">
+                (
+                <identifier srow="45" scol="39" erow="45" ecol="56">connectionFactory</identifier>
+                )
+              </argument_list>
+            </method_invocation>
+            ;
+          </expression_statement>
+          <expression_statement srow="46" scol="8" erow="46" ecol="43">
+            <method_invocation srow="46" scol="8" erow="46" ecol="42">
+              <identifier field="object" srow="46" scol="8" erow="46" ecol="17">container</identifier>
+              .
+              <identifier field="name" srow="46" scol="18" erow="46" ecol="31">setQueueNames</identifier>
+              <argument_list field="arguments" srow="46" scol="31" erow="46" ecol="42">
+                (
+                <identifier srow="46" scol="32" erow="46" ecol="41">queueName</identifier>
+                )
+              </argument_list>
+            </method_invocation>
+            ;
+          </expression_statement>
+          <expression_statement srow="47" scol="8" erow="47" ecol="54">
+            <method_invocation srow="47" scol="8" erow="47" ecol="53">
+              <identifier field="object" srow="47" scol="8" erow="47" ecol="17">container</identifier>
+              .
+              <identifier field="name" srow="47" scol="18" erow="47" ecol="36">setMessageListener</identifier>
+              <argument_list field="arguments" srow="47" scol="36" erow="47" ecol="53">
+                (
+                <identifier srow="47" scol="37" erow="47" ecol="52">listenerAdapter</identifier>
+                )
+              </argument_list>
+            </method_invocation>
+            ;
+          </expression_statement>
+          <return_statement srow="48" scol="8" erow="48" ecol="25">
+            return
+            <identifier srow="48" scol="15" erow="48" ecol="24">container</identifier>
+            ;
+          </return_statement>
+          }
+        </block>
+      </method_declaration>
+      <method_declaration srow="51" scol="4" erow="54" ecol="5">
+        <modifiers srow="51" scol="4" erow="51" ecol="9">
+          <marker_annotation srow="51" scol="4" erow="51" ecol="9">
+            @
+            <identifier field="name" srow="51" scol="5" erow="51" ecol="9">Bean</identifier>
+          </marker_annotation>
+        </modifiers>
+        <type_identifier field="type" srow="52" scol="4" erow="52" ecol="26">MessageListenerAdapter</type_identifier>
+        <identifier field="name" srow="52" scol="27" erow="52" ecol="42">listenerAdapter</identifier>
+        <formal_parameters field="parameters" srow="52" scol="42" erow="52" ecol="61">
+          (
+          <formal_parameter srow="52" scol="43" erow="52" ecol="60">
+            <type_identifier field="type" srow="52" scol="43" erow="52" ecol="51">Receiver</type_identifier>
+            <identifier field="name" srow="52" scol="52" erow="52" ecol="60">receiver</identifier>
+          </formal_parameter>
+          )
+        </formal_parameters>
+        <block field="body" srow="52" scol="62" erow="54" ecol="5">
+          {
+          <return_statement srow="53" scol="8" erow="53" ecol="70">
+            return
+            <object_creation_expression srow="53" scol="15" erow="53" ecol="69">
+              new
+              <type_identifier field="type" srow="53" scol="19" erow="53" ecol="41">MessageListenerAdapter</type_identifier>
+              <argument_list field="arguments" srow="53" scol="41" erow="53" ecol="69">
+                (
+                <identifier srow="53" scol="42" erow="53" ecol="50">receiver</identifier>
+                ,
+                <string_literal srow="53" scol="52" erow="53" ecol="68">
+                  "
+                  <string_fragment srow="53" scol="53" erow="53" ecol="67">receiveMessage</string_fragment>
+                  "
+                </string_literal>
+                )
+              </argument_list>
+            </object_creation_expression>
+            ;
+          </return_statement>
+          }
+        </block>
+      </method_declaration>
+      }
+    </class_body>
+  </class_declaration>
+</program>

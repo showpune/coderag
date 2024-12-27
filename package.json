@@ -1,0 +1,18 @@
+{
+	"name": "coderagtest",
+	"publisher": "Microsoft",
+	"displayName": "Code Rag Test",
+	"type": "module",
+	"description": "Code RAG Test",
+	"dependencies": {
+		"@langchain/community": "^0.3.20",
+		"@langchain/core": "^0.3.26",
+		"@langchain/openai": "^0.3.16",
+		"@langchain/textsplitters": "^0.1.0",
+		"chromadb": "^1.9.4",
+		"hnswlib-node": "^3.0.0",
+		"langchain": "^0.3.8",
+		"tree-sitter": "^0.21.1",
+		"tree-sitter-java": "^0.23.5"
+	}
+}
